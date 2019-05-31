@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  brand: MyString
+  year_released: 1
+  camera: false
+  mpixels: 9.99
+  internal_storage: MyString
+  sim_slots: 1
+  size_of_screen: 1
+  operating_system: MyString
+  num_in_stock: 9.99
+
+two:
+  name: MyString
+  brand: MyString
+  year_released: 1
+  camera: false
+  mpixels: 9.99
+  internal_storage: MyString
+  sim_slots: 1
+  size_of_screen: 1
+  operating_system: MyString
+  num_in_stock: 9.99
