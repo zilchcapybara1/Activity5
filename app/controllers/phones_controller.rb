@@ -1,15 +1,24 @@
 class PhonesController < ApplicationController
 
 	def index
-		@phones = Phone.all
+		@phones = Phone.where("num_in_stock > 0")
 	end
 
 	def show
+		
 		@phone = Phone.find(params[:id])
 	end
 
 	def new
 		@phone = Phone.new
+	end
+
+	def buy
+		@phone = Phone.find(params[:id])
+		@phone.num_in_stock = @phone.num_in_stock - 1
+	
+		@phone.save
+		
 	end
 
 	def create
